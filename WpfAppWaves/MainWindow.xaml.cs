@@ -32,16 +32,7 @@ namespace WpfAppWaves
 
 		private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
 		{
-			await vm.LoadMarketData();
-			cbRange.SelectedIndex = 0;
-			cbStep.SelectedIndex = 0;
-		}
-
-		private async void ButtonLoad_Click(object sender, RoutedEventArgs e)
-		{
-			vm.ValidRange = cbRange.SelectedValue.ToString();
-			vm.StepInterval = cbStep.SelectedValue.ToString();
-			await vm.LoadMarketData();
+			
 		}
 	}
 }
